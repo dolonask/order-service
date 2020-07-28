@@ -1,0 +1,199 @@
+2020-07-15 23:47:34.242  INFO 18720 --- [restartedMain] k.e.o.OrderServiceApplication            : Starting OrderServiceApplication on NB-DOLON with PID 18720 (C:\Users\Dolon\delivery-service\order-service\target\classes started by Dolon in C:\Users\Dolon\delivery-service\order-service)
+2020-07-15 23:47:34.244 DEBUG 18720 --- [restartedMain] k.e.o.OrderServiceApplication            : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 23:47:34.245  INFO 18720 --- [restartedMain] k.e.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2020-07-15 23:47:34.295  INFO 18720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 23:47:34.296  INFO 18720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 23:47:35.476  INFO 18720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 23:47:35.503  INFO 18720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2020-07-15 23:47:36.118  INFO 18720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-07-15 23:47:36.127  INFO 18720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 23:47:36.127  INFO 18720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 23:47:36.242  INFO 18720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 23:47:36.242  INFO 18720 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1946 ms
+2020-07-15 23:47:36.532  INFO 18720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 23:47:36.872  WARN 18720 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 23:47:36.924  INFO 18720 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 23:47:37.025  INFO 18720 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 23:47:37.051  INFO 18720 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-15 23:47:37.118  INFO 18720 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 23:47:37.275  WARN 18720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-07-15 23:47:37.477  WARN 18720 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8001 is already in use
+2020-07-15 23:47:37.478  WARN 18720 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'tomcatMetricsBinder': java.lang.NullPointerException
+2020-07-15 23:47:37.480  INFO 18720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 23:47:37.480  WARN 18720 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.AnnotationException: No identifier specified for entity: kg.easy.orderservice.models.entity.BlackList
+2020-07-15 23:47:37.480  INFO 18720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-15 23:47:37.482  INFO 18720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-15 23:47:37.484  INFO 18720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-15 23:47:37.488  INFO 18720 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-07-15 23:47:37.502  INFO 18720 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-15 23:47:37.507 ERROR 18720 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
+
+2020-07-15 23:47:52.581  INFO 12700 --- [restartedMain] k.e.o.OrderServiceApplication            : Starting OrderServiceApplication on NB-DOLON with PID 12700 (C:\Users\Dolon\delivery-service\order-service\target\classes started by Dolon in C:\Users\Dolon\delivery-service\order-service)
+2020-07-15 23:47:52.584 DEBUG 12700 --- [restartedMain] k.e.o.OrderServiceApplication            : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 23:47:52.584  INFO 12700 --- [restartedMain] k.e.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2020-07-15 23:47:52.631  INFO 12700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 23:47:52.631  INFO 12700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 23:47:53.737  INFO 12700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 23:47:53.761  INFO 12700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-07-15 23:47:54.348  INFO 12700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8003 (http)
+2020-07-15 23:47:54.358  INFO 12700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 23:47:54.358  INFO 12700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 23:47:54.468  INFO 12700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 23:47:54.468  INFO 12700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1837 ms
+2020-07-15 23:47:54.711  INFO 12700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 23:47:55.051  WARN 12700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 23:47:55.071  INFO 12700 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 23:47:55.167  INFO 12700 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 23:47:55.230  INFO 12700 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-15 23:47:55.311  INFO 12700 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 23:47:55.459  WARN 12700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-07-15 23:47:55.655  INFO 12700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8003 (http) with context path ''
+2020-07-15 23:47:55.657  INFO 12700 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 23:47:55.674  INFO 12700 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 23:47:55.700  INFO 12700 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 23:47:55.820  INFO 12700 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-07-15 23:47:55.821  INFO 12700 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-07-15 23:47:55.837  INFO 12700 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 23:47:55.838  INFO 12700 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 23:47:55.852  INFO 12700 --- [restartedMain] k.e.o.OrderServiceApplication            : Started OrderServiceApplication in 3.692 seconds (JVM running for 4.439)
+2020-07-15 23:47:56.354  INFO 12700 --- [RMI TCP Connection(2)-10.230.171.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 23:47:56.354  INFO 12700 --- [RMI TCP Connection(2)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 23:47:56.363  INFO 12700 --- [RMI TCP Connection(2)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-07-15 23:48:46.233  INFO 21484 --- [restartedMain] k.e.o.OrderServiceApplication            : Starting OrderServiceApplication on NB-DOLON with PID 21484 (C:\Users\Dolon\delivery-service\order-service\target\classes started by Dolon in C:\Users\Dolon\delivery-service\order-service)
+2020-07-15 23:48:46.236 DEBUG 21484 --- [restartedMain] k.e.o.OrderServiceApplication            : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 23:48:46.236  INFO 21484 --- [restartedMain] k.e.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2020-07-15 23:48:46.282  INFO 21484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 23:48:46.282  INFO 21484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 23:48:47.439  INFO 21484 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 23:48:47.463  INFO 21484 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-07-15 23:48:48.070  INFO 21484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8003 (http)
+2020-07-15 23:48:48.079  INFO 21484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 23:48:48.079  INFO 21484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 23:48:48.203  INFO 21484 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 23:48:48.203  INFO 21484 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1921 ms
+2020-07-15 23:48:48.454  INFO 21484 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 23:48:48.782  WARN 21484 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 23:48:48.797  INFO 21484 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 23:48:48.893  INFO 21484 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 23:48:48.960  INFO 21484 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-15 23:48:49.047  INFO 21484 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 23:48:49.200  WARN 21484 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-07-15 23:48:49.411  INFO 21484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8003 (http) with context path ''
+2020-07-15 23:48:49.412  INFO 21484 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 23:48:49.426  INFO 21484 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 23:48:49.457  INFO 21484 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 23:48:49.573  INFO 21484 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-07-15 23:48:49.575  INFO 21484 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-07-15 23:48:49.589  INFO 21484 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 23:48:49.589  INFO 21484 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 23:48:49.601  INFO 21484 --- [restartedMain] k.e.o.OrderServiceApplication            : Started OrderServiceApplication in 3.767 seconds (JVM running for 4.616)
+2020-07-15 23:48:49.957  INFO 21484 --- [RMI TCP Connection(2)-10.230.171.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 23:48:49.958  INFO 21484 --- [RMI TCP Connection(2)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 23:48:49.969  INFO 21484 --- [RMI TCP Connection(2)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-07-15 23:49:57.453  INFO 18616 --- [restartedMain] k.e.o.OrderServiceApplication            : Starting OrderServiceApplication on NB-DOLON with PID 18616 (C:\Users\Dolon\delivery-service\order-service\target\classes started by Dolon in C:\Users\Dolon\delivery-service\order-service)
+2020-07-15 23:49:57.456 DEBUG 18616 --- [restartedMain] k.e.o.OrderServiceApplication            : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 23:49:57.456  INFO 18616 --- [restartedMain] k.e.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2020-07-15 23:49:57.506  INFO 18616 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 23:49:57.506  INFO 18616 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 23:49:58.612  INFO 18616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 23:49:58.634  INFO 18616 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-07-15 23:49:59.216  INFO 18616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8003 (http)
+2020-07-15 23:49:59.225  INFO 18616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 23:49:59.225  INFO 18616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 23:49:59.334  INFO 18616 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 23:49:59.334  INFO 18616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1827 ms
+2020-07-15 23:49:59.578  INFO 18616 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 23:49:59.958  WARN 18616 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 23:49:59.977  INFO 18616 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 23:50:00.086  INFO 18616 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 23:50:00.167  INFO 18616 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-15 23:50:00.271  INFO 18616 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 23:50:00.429  WARN 18616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-07-15 23:50:00.648  INFO 18616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8003 (http) with context path ''
+2020-07-15 23:50:00.651  INFO 18616 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 23:50:00.665  INFO 18616 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 23:50:00.692  INFO 18616 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 23:50:00.822  INFO 18616 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-07-15 23:50:00.825  INFO 18616 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-07-15 23:50:00.846  INFO 18616 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 23:50:00.847  INFO 18616 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 23:50:00.870  INFO 18616 --- [restartedMain] k.e.o.OrderServiceApplication            : Started OrderServiceApplication in 3.849 seconds (JVM running for 4.615)
+2020-07-15 23:50:01.220  INFO 18616 --- [RMI TCP Connection(2)-10.230.171.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 23:50:01.220  INFO 18616 --- [RMI TCP Connection(2)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 23:50:01.229  INFO 18616 --- [RMI TCP Connection(2)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-07-15 23:51:50.700  INFO 21980 --- [restartedMain] k.e.o.OrderServiceApplication            : Starting OrderServiceApplication on NB-DOLON with PID 21980 (C:\Users\Dolon\delivery-service\order-service\target\classes started by Dolon in C:\Users\Dolon\delivery-service\order-service)
+2020-07-15 23:51:50.704 DEBUG 21980 --- [restartedMain] k.e.o.OrderServiceApplication            : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 23:51:50.704  INFO 21980 --- [restartedMain] k.e.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2020-07-15 23:51:50.757  INFO 21980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 23:51:50.758  INFO 21980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 23:51:51.827  INFO 21980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 23:51:51.849  INFO 21980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-07-15 23:51:52.429  INFO 21980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8003 (http)
+2020-07-15 23:51:52.437  INFO 21980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 23:51:52.437  INFO 21980 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 23:51:52.549  INFO 21980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 23:51:52.549  INFO 21980 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1791 ms
+2020-07-15 23:51:52.814  INFO 21980 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 23:51:53.136  WARN 21980 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 23:51:53.147  INFO 21980 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 23:51:53.243  INFO 21980 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 23:51:53.307  INFO 21980 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-15 23:51:53.371  INFO 21980 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 23:51:53.512  WARN 21980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-07-15 23:51:53.720  INFO 21980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8003 (http) with context path ''
+2020-07-15 23:51:53.721  INFO 21980 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 23:51:53.734  INFO 21980 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 23:51:53.758  INFO 21980 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 23:51:53.867  INFO 21980 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-07-15 23:51:53.868  INFO 21980 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-07-15 23:51:53.882  INFO 21980 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 23:51:53.883  INFO 21980 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 23:51:53.894  INFO 21980 --- [restartedMain] k.e.o.OrderServiceApplication            : Started OrderServiceApplication in 3.586 seconds (JVM running for 4.386)
+2020-07-15 23:51:54.476  INFO 21980 --- [RMI TCP Connection(2)-10.230.171.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 23:51:54.476  INFO 21980 --- [RMI TCP Connection(2)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 23:51:54.483  INFO 21980 --- [RMI TCP Connection(2)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-15 23:52:32.578  INFO 19924 --- [restartedMain] k.e.o.OrderServiceApplication            : Starting OrderServiceApplication on NB-DOLON with PID 19924 (C:\Users\Dolon\delivery-service\order-service\target\classes started by Dolon in C:\Users\Dolon\delivery-service\order-service)
+2020-07-15 23:52:32.582 DEBUG 19924 --- [restartedMain] k.e.o.OrderServiceApplication            : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 23:52:32.582  INFO 19924 --- [restartedMain] k.e.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2020-07-15 23:52:32.644  INFO 19924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 23:52:32.644  INFO 19924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 23:52:33.736  INFO 19924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 23:52:33.759  INFO 19924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-07-15 23:52:34.330  INFO 19924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8003 (http)
+2020-07-15 23:52:34.337  INFO 19924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 23:52:34.338  INFO 19924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 23:52:34.472  INFO 19924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 23:52:34.472  INFO 19924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1828 ms
+2020-07-15 23:52:34.721  INFO 19924 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 23:52:35.038  WARN 19924 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 23:52:35.056  INFO 19924 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 23:52:35.161  INFO 19924 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 23:52:35.235  INFO 19924 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-15 23:52:35.322  INFO 19924 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 23:52:35.454  WARN 19924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-07-15 23:52:35.649  INFO 19924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8003 (http) with context path ''
+2020-07-15 23:52:35.650  INFO 19924 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 23:52:35.664  INFO 19924 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 23:52:35.689  INFO 19924 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 23:52:35.798  INFO 19924 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-07-15 23:52:35.800  INFO 19924 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-07-15 23:52:35.814  INFO 19924 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 23:52:35.814  INFO 19924 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 23:52:35.828  INFO 19924 --- [restartedMain] k.e.o.OrderServiceApplication            : Started OrderServiceApplication in 3.653 seconds (JVM running for 4.409)
+2020-07-15 23:52:36.388  INFO 19924 --- [RMI TCP Connection(1)-10.230.171.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 23:52:36.388  INFO 19924 --- [RMI TCP Connection(1)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 23:52:36.395  INFO 19924 --- [RMI TCP Connection(1)-10.230.171.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
