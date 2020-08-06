@@ -74,4 +74,9 @@ public class PhoneServiceImpl implements PhoneService {
         return phoneRepository.findAllByClient(client);
 
     }
+
+    @Override
+    public List<Phone> findByClientNameOrPhone(String value) {
+        return phoneRepository.findAllByClientNameOrPhone(value, value);
+    }
 }

@@ -12,4 +12,8 @@ public interface ClientService {
     ClientDto findClientById(Long id);
 
     ClientDto updateClient(ClientDto clientDto);
+
+    List<ClientDto> findAllClients();
+
+    List<ClientDto> findClientsByPhoneOrName(String value);
 }

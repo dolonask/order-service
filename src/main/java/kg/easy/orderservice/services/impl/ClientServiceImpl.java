@@ -102,4 +102,27 @@ public class ClientServiceImpl implements ClientService {
 
         return clientDto;
     }
+
+    @Override
+    public List<ClientDto> findAllClients() {
+
+        List<ClientDto> clientDtos;
+        List<Client> clients = clientRepository.findAll();
+
+        clientDtos = clients.stream()
+                .map(x-> ClientMapper.INSTANCE.clientToClientDto(x, phoneService.findClientPhones(x)))
+                .collect(Collectors.toList());
+
+        return clientDtos;
+    }
+
+    @Override
+    public List<ClientDto> findClientsByPhoneOrName(String value) {
+
+        List<Phone> phones = phoneService.findByClientNameOrPhone(value);
+
+        List<ClientDto> clientDtos =  ClientMapper.INSTANCE.phonesToClientDtos(phones);
+
+        return clientDtos;
+    }
 }

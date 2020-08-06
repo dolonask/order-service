@@ -1,5 +1,6 @@
 package kg.easy.orderservice.services;
 
+import jdk.nashorn.internal.ir.LiteralNode;
 import kg.easy.orderservice.models.dto.ClientDto;
 import kg.easy.orderservice.models.dto.PhoneDto;
 import kg.easy.orderservice.models.entity.Client;
@@ -15,4 +16,6 @@ public interface PhoneService {
     List<PhoneDto> updateClientPhones(ClientDto clientDto);
 
     List<Phone> findClientPhones(Client client);
+
+    List<Phone> findByClientNameOrPhone(String value);
 }
